@@ -1,3 +1,5 @@
+/* ------------------------------- GLOBAL SETTINGS ------------------------------- */
+/* Learned this from https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz */
 @media (prefers-reduced-motion: no-preference) {
     * {
       scroll-behavior: smooth;
@@ -11,18 +13,39 @@
 }
 
 body{
+  color: #fff;
   background-color: #2e2d2d;
+  -ms-overflow-style: none;  /* Hides scrollbar IE and Edge */
+  scrollbar-width: none;  /* Hides scrollbar for Firefox */
 }
 
-/* REMOVE ONCE DONE */
-/* header, nav, section{
-  border: 1px solid white;
-} */
-/* REMOVE ONCE DONE */
+/* Hides scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
 
-/* HEADER */
+h1, h2{
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+}
+
+#blog, #about, #contact{
+  scroll-margin-top: 40px; /* Creates Offset for Navigation Auto Scroll */
+  text-align: center;
+}
+
+section:not(:first-of-type){
+  position: relative;
+  top: 0;
+  height: 970px; /* Sets height of sections after Progress Reel */
+}
+
+/* ------------------------------- HEADER ------------------------------- */
 header{
-  text-align: justify;
+  text-align: center;
 }
 
 .logo{
@@ -32,19 +55,14 @@ header{
 
 h1{
   width: 550px;
-  margin-bottom: 10px;
-  color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 14px;
-  /* Used to reposition text so that space is in the middle */
+  margin-bottom: 20px;
+  /* Helps Center Full Name with the spacing in the middle */
   position: relative;
   left: 51vw;
   transform: translateX(-50%);
 }
 
-/* NAVIGATION */
+/* ------------------------------- NAVIGATION ------------------------------- */
 nav{
   height: 40px;
   width: 100vw;
@@ -60,7 +78,7 @@ nav ul{
   height: 40px;
 }
 
-/* Helps Space Nav Items Evenly */
+/* Helps Space Nav Items Evenly While Using Justify */
 nav ul:after {
   width:100%;
   margin: 0;
@@ -84,20 +102,90 @@ nav ul:after {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .nav-home a{
   color: #fff;
 }
 
 .nav-item a:hover{
-  padding-bottom: 2px;
   color: #fff;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.925);
-  border-bottom: 2px groove #d1d1d1;
 }
 
-/* ------------------------------- PROGRESS REEL ------------------------------- */
-#progress-reel{
-  margin: 20px auto;
-  display: block;
-  box-shadow: 0 0 1000px 0px rgb(31, 31, 31);
+.nav-item a:active{
+  color: #1f1f1f;
 }
+
+/* -------Underline Animation-------- */
+.hoverAnimation {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px #00000000;
+  position: relative;
+  overflow: hidden;
+}
+.hoverAnimation:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #ffffffcc;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hoverAnimation:hover:before, .hoveranimation:focus:before, .hoverAnimation:active:before {
+  left: 0;
+  right: 0;
+}
+/* ------------------------------- PROGRESS REEL SECTION ------------------------------- */
+.sectionReel{
+  height: 800px;
+  background: #2e2d2d;
+  margin-bottom: 64px;
+  background: linear-gradient(#2e2d2d 0%, #222222 50%, #2e2d2d 100%);
+  z-index: -1;
+}
+
+#progress-reel{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  scroll-margin-top: 500px;
+}
+
+/* ------------------------------- BLOG SECTION ------------------------------- */
+.sectionBlog{
+  background-color: #141414;
+}
+/* ------------------------------- ABOUT SECTION ------------------------------- */
+.sectionAbout{
+  background-color: #0f0f0f;
+}
+/* ------------------------------- CONTACT SECTION ------------------------------- */
+.sectionContact{
+  background-color: #000;
+}
+/* ------------------------------- FOOTER ------------------------------- */
+footer{
+  height: 150px;
+  text-align: center;
+  /* Creates Pride Background */
+  background: #dd193a;
+  background: linear-gradient(90deg, #dd193a 0%, #dd193a 16.667%, #f99435 16.667%, #f99435 33.334%, #fef032 33.334%, #fef032 50%, #00e35e 50%, #00e35e 66.667%, #0097fb 66.667%, #0097fb 83.334%, #8564e2 83.334%, #8564e2 100%);
+}
+
+footer p{
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+} 

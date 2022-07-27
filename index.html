@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <!-- HERE: Don't forget to add a meta for description -->
+    <meta name="description" content="A homepage for Ernesto Vaquilar showcasing his Animation and Web Development work.">
     <title>Ernesto Vaquilar Animation and Web Development Portfolio</title>
 </head>
 <body>
@@ -35,43 +35,57 @@
 
     <nav>
         <ul>
-            <li class="nav-item nav-home"><a href="./index.html">Home</a></li>
-            <li class="nav-item"><a href="#progress-reel">Progress Reel</a></li>
-            <li class="nav-item"><a href="#blog">Blog</a></li>
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item nav-home"><a href="./index.html" class="hoverAnimation">Home</a></li>
+            <li class="nav-item"><a href="#progress-reel" class="hoverAnimation">Progress Reel</a></li>
+            <li class="nav-item"><a href="#blog" class="hoverAnimation">Blog</a></li>
+            <li class="nav-item"><a href="#about" class="hoverAnimation">About</a></li>
+            <li class="nav-item"><a href="#contact" class="hoverAnimation">Contact</a></li>
         </ul>
     </nav>
 
-    <section role="region" aria-labelledby="progress-reel">
+    <section role="region" aria-labelledby="progress-reel" class="sectionReel">
         <video
             id="progress-reel"
             width="1280px"
             height="720px"
             loop
             controls
-        >
-        <source src="./media/Progress Reel.mov" type="video/mp4">
+            controlsList="nodownload"
+            disablePictureInPicture
+            alt="Ernesto Vaquilar's Progress Reel. Animation Assets Provided by 'https://www.animationmentor.com'. Music I Use: 'https://www.bensound.com/free-music-for-videos'.">
+            <source src="./media/ProgressReel.mp4" type="video/mp4" />
+            <track src="./media/ProgressReel.en-descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions" />
+            <track src="./media/ProgressReel.en-captions.vtt" kind="captions" srclang="en" label="English Captions" />
             Video Unsupported
         </video>
-        <!-- Animation Assets Provided by AnimationMentor.com -->
-        <!-- Music I Use: https://www.bensound.com/free-music-for-videos  -->
     </section>
 
-    <section role="region" aria-labelledby="blog">
-
+    <section role="region" aria-labelledby="blog" class="sectionBlog">
+        <h2 id="blog">Blog</h2>
     </section>
 
-    <section role="region" aria-labelledby="about">
-
+    <section role="region" aria-labelledby="about" class="sectionAbout">
+        <h2 id="about">About</h2>
     </section>
 
-    <section role="region" aria-labelledby="contact">
+    <section role="region" aria-labelledby="contact" class="sectionContact">
+        <form action="https://formsubmit.co/zryput9hg@mozmail.com" method="POST">
+            <h2 id="contact">Contact</h2>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
 
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
-
+            <p>&copy;2022 Ernesto Vaquilar</p>
     </footer>
 </body>
 </html>
