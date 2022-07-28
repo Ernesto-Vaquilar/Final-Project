@@ -10,13 +10,6 @@
             “The most important thing about a technology is how it changes people.”
 
                                             Jaron Lanier
-
-                        "When you're no longer constantly in survival mode,you have to ask yourself:
-                                            What kind of person am I going to be?"
-
-                                                            Irma Olguin Jr.
-
-    
 -->
 <html lang="en">
 <head>
@@ -27,10 +20,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f95359a81.js" crossorigin="anonymous"></script>
     <meta name="description" content="A homepage for Ernesto Vaquilar showcasing his Animation and Web Development work.">
     <title>Ernesto Vaquilar Animation and Web Development Portfolio</title>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="" alt="Ernesto Vaquilar's logo">
@@ -48,6 +43,7 @@
         </ul>
     </nav>
 
+<!-- PROGRESS REEL -->
     <section role="region" aria-labelledby="progress-reel" class="sectionReel">
         <video
             id="progress-reel"
@@ -59,23 +55,31 @@
             disablePictureInPicture
             alt="Ernesto Vaquilar's Progress Reel. Animation Assets Provided by 'https://www.animationmentor.com'. Music I Use: 'https://www.bensound.com/free-music-for-videos'.">
             <source src="./media/ProgressReel.mp4" type="video/mp4" />
+            <source src="./media/ProgressReel.mov" type="video/mov" />
             <track src="./media/ProgressReel.en-descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions" />
             <track src="./media/ProgressReel.en-captions.vtt" kind="captions" srclang="en" label="English Captions" />
             Video Unsupported
         </video>
     </section>
 
+<!-- BLOG -->
     <section role="region" aria-labelledby="blog" class="sectionBlog">
         <h2 id="blog">Blog</h2>
     </section>
 
+<!-- ABOUT -->
     <section role="region" aria-labelledby="about" class="sectionAbout">
         <h2 id="about">About</h2>
+        <div class="portrait">
+            <img src="./media/selfie.jpeg" alt="A portrait of Ernesto Vaquilar.">
+        </div>
     </section>
-
+    
+<!-- CONTACT -->
     <section role="region" aria-labelledby="contact" class="sectionContact">
         <form action="https://formsubmit.co/zryput9hg@mozmail.com" method="POST">
             <h2 id="contact">Contact</h2>
+            
             <label for="name">Name:</label>
             <input type="text" name="name" id="name">
 
@@ -90,7 +94,19 @@
     </section>
 
     <footer>
-            <p>&copy;2022 Ernesto Vaquilar</p>
+        <div class="socialLinks">
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/AnimationMentor/status/1504835149543915530">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/Ernesto-Vaquilar">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>&copy;2022 Ernesto Vaquilar</p>
     </footer>
+
 </body>
 </html>
