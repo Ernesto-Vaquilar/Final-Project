@@ -33,14 +33,15 @@ h1, h2{
 }
 
 #blog, #about, #contact{
-  scroll-margin-top: 40px; /* Creates Offset for Navigation Auto Scroll */
+  scroll-margin-top: 50px; /* Creates Offset for Navigation Auto Scroll */
   text-align: center;
 }
 
 section:not(:first-of-type){
+  height: 970px; /* Sets height of sections after Progress Reel */
+  padding: 30px;
   position: relative;
   top: 0;
-  height: 970px; /* Sets height of sections after Progress Reel */
 }
 
 /* ------------------------------- HEADER ------------------------------- */
