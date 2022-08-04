@@ -3,16 +3,17 @@
     “The most important thing about a technology is how it changes people.”
                                             ― Jaron Lanier
 -->
+<!-- Created for Educational Purposes -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homepage for Ernesto Vaquilar Showcasing Animation and Web Development.">
+    <script src="https://kit.fontawesome.com/8f95359a81.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8f95359a81.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Ernesto Vaquilar Animation and Web Development Portfolio</title>
 </head>
@@ -78,7 +79,7 @@
                 </div>
                 <div class="card-text">
                     <h3 class="card-title">The Complexity Bias</h3>
-                    <p class="card-description">When faced with a problem, it's tempting to get carried away and gravitate towards complexity. More often than not, we ignore the straightforward solution. In computer animation, this can impede us from...</p>
+                    <p class="card-description">When faced with a problem, it's tempting to get carried away and gravitate towards complexity. More often than not, we ignore the straightforward solution. In computer animation, this can impede us from learning and making...</p>
                     <a class="card-link" href="./underconstruction.html">Read more<span class="sr-only"> about the complexity bias.</span></a>
                 </div>
             </li>
@@ -127,6 +128,8 @@
                 </div>
             </li>
 
+            <li><a class="blog-view-all" href="./underconstruction.html">View Full Blog List</a></li>
+            
         </ul>
 
     </section> 
@@ -137,12 +140,14 @@
         <header>
             <h2>About</h2>
         </header>
-        <div class="content">
 
+        <div class="about-description">
+            <h3>Hey There!<br>I'm Ernesto Vaquilar (he/him)</h3>
+            <div class="portrait">
+                <img src="./media/selfie.jpeg" alt="A portrait of Ernesto Vaquilar standing in front of foliage." />
+            </div>
         </div>
-        <div class="portrait">
-            <img src="./media/selfie.jpeg" alt="A portrait of Ernesto Vaquilar" />
-        </div>
+
     </section>
 
 <!-- CONTACT SECTION -->
@@ -150,38 +155,52 @@
     <section id="contact" role="region" aria-labelledby="contact">
         <header>
             <h2>Contact</h2>
-            <div class="content">
-                
-            </div>
         </header>
+
+        <div class="map-container">
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204504.0664962733!2d-119.79456145000002!3d36.78553345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1659617453316!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
         <!-- CONTACT FORM -->
 
         <form action="https://formsubmit.co/vaquilar.ernesto@gmail.com" method="POST">
-
+            <h3>Get in touch!</h3>
+            <p>If you think I would be a great match for a tech project or an opportunity, let's discuss!</p>
+            <!-- NAME -->
             <div class="info-block">
-                <label for="name">Name</label>
+                <div class="label-container">
+                    <label for="name">Name:</label>
+                </div>
                 <input type="text" name="name" id="name" placeholder="Raya Mudolph" required />
             </div>
-            
+                
+                <!-- EMAIL -->
             <div class="info-block">
-                <label for="email">Email</label>
+                <div class="label-container">
+                    <label for="email">Email:</label>
+                </div>
                 <input type="email" name="email" id="email" placeholder="rayamudolph72@snl.edu" required />
             </div>
-
+    
+                <!-- Message -->
             <div class="info-block">
-                <label for="message">Message</label>                
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="I was referred to you by my good friend, Fina Tey. I'd like to discuss a great opportunity with you. Please meet me by the Renoir Washer Woman Sculpture in Downtown Fresno at 11:35 PM. Bring a kitchen sponge."></textarea>
+                <div class="label-container">
+                    <label for="message">Message:</label>
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="I was referred to you by my good friend, Fina Tey. I'd like to discuss a great opportunity with you. Please meet me by Renoir's Washer Woman Sculpture in Downtown Fresno at 11:34 PM. Bring a spatula and a kitchen sponge."></textarea>
             </div>
+    
+            <button type="submit">Submit</button>
+    
+        </form>
 
-            <button type="submit">Send</button>
-
-       </form>
     </section>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer>
+
 
     </footer>
 </body>
