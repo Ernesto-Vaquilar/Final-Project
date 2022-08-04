@@ -237,8 +237,8 @@ section{
     border-bottom: 2px solid #fff;
 }
 .card-description{
-    max-height: 60%;
-    padding: 10px 6px 10px 6px;
+    height: 60%;
+    padding: 15px 6px 15px 6px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     line-height: 20px;
