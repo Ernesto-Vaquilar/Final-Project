@@ -243,7 +243,7 @@ section{
 }
 .card-description{
     height: 60%;
-    padding: 15px 6px 0px 6px;
+    padding: 30px 6px 0px 6px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     line-height: 20px;
@@ -286,9 +286,10 @@ section{
 
 .about-description{
     height: auto;
-    width: 50%;
+    width: 40%;
     padding-left: 5%;
     display: inline-block;
+    vertical-align: top;
     position: relative;
     top: 45%;
     transform: translateY(-50%);
@@ -311,6 +312,33 @@ section{
     border-radius: 7px;
 }
 
+.about-content{
+    text-align: justify;
+    height: auto;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    text-indent: 20px;
+    line-height: 35px;
+    display: inline-block;
+    position: relative;
+    top: 46.5%;
+    transform: translateY(-50%);
+}
+
+.about-link{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.about-link:hover{
+    color: #000;
+    background-color: #fff;
+}
 /* CONTACT */
 #contact{
     background-color: #000;
@@ -353,6 +381,7 @@ form p{
     margin: 30px 0 40px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    line-height: 30px;
 }
 
 .info-block{
@@ -393,4 +422,35 @@ footer{
     /* Creates Pride Background */
     background: #dd193a;
     background: linear-gradient(90deg, #dd193a 0%, #dd193a 16.667%, #f99435 16.667%, #f99435 33.334%, #fef032 33.334%, #fef032 50%, #00e35e 50%, #00e35e 66.667%, #0097fb 66.667%, #0097fb 83.334%, #8564e2 83.334%, #8564e2 100%);
+}
+
+.footer-container{
+    height: 75%;
+    width: 18%;
+    background-color: #000;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-icons{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-icons a{
+    margin: 5px;
+    color: #fff;
 }
